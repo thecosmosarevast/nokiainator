@@ -12,8 +12,10 @@
   download inno setup
   [https://jrsoftware.org/inno-setup/downloads](https://jrsoftware.org/inno-setup/downloads)
 ## Step quatro
+  Move ffmpeg.exe to dist
+## Step 5
   run up setup.internationalspacestation (setup.iss)
-## step 5
+## step 6
   yeah thats it
 
 # How to uninstall
