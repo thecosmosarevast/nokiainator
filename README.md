@@ -6,7 +6,7 @@
 ## Step tuah.
   compile .py file
   ```python
-  python -m PyInstaller --onefile --console --name Nokiainator --icon="assets\nokiainator.ico" --add-binary "src\ffmpeg.exe;." --clean --noconfirm "src\nokiainator.py"
+  python -m PyInstaller --onefile --console --name Nokiainator --icon="assets\nokiainator.ico" --clean --noconfirm "src\nokiainator.py"
 ```
 ## Step 3
   download inno setup
