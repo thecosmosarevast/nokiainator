@@ -1,4 +1,3 @@
-
 name: Build Nokiainatorotron9000
 
 on:
@@ -28,11 +27,11 @@ jobs:
 
       - name: Build Nokiainator
         run: |
-          python -m PyInstaller --onefile --console --name Nokiainator --icon="assets\nokiainator.ico" --clean --noconfirm "src\nokiainator.py"
+          python -m PyInstaller --onedir --console --name Nokiainator --icon="assets\nokiainator.ico" --clean --noconfirm "src\nokiainator.py"
 
       - name: Copy dumbass FFMPEG
         run: |
-          Copy-Item "src\ffmpeg.exe" "dist\ffmpeg.exe"
+          Copy-Item "src\ffmpeg.exe" "dist\Nokiainator\ffmpeg.exe"
 
       - name: Install inno setup
         run: |
@@ -47,6 +46,5 @@ jobs:
         with:
           name: Nokiainator-Windows
           path: |
-            dist/Nokiainator.exe
-            dist/ffmpeg.exe
+            dist/Nokiainator/
             installer/output/Nokiainator-Setup-1.0.1.exe
