@@ -21,8 +21,7 @@
 # How to uninstall
 
 ## Step 1
->Go to C:\Program Files\Nokiainator
+>Open start menu
 ## Step 2
->Press unins000.exe
-## Step 3
->Why am i making a tutorial that has 2 steps
+>Find uninstall nokiainator
+>Why am i making a tutorial for this
