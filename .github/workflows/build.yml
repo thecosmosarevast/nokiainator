@@ -49,4 +49,4 @@ jobs:
           path: |
             dist/Nokiainator.exe
             dist/ffmpeg.exe
-            installer/output/Nokiainator-Setup-1.0.exe
+            installer/output/Nokiainator-Setup-1.0.1.exe
