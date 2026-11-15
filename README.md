@@ -13,3 +13,12 @@
   run up setup.internationalspacestation (setup.iss)
 ## step 5
   yeah thats it
+
+# How to uninstall
+
+## Step 1
+	Go to C:\Program Files\Nokiainator
+## Step 2
+	Press unins000.exe
+## Step 3
+	Why am i making a tutorial that has 2 steps
