@@ -1,5 +1,3 @@
-compilation instructions:
-python -m PyInstaller --onefile --console --name Nokiainator --icon="assets\nokiainator.ico" --add-binary "src\ffmpeg.exe;." --clean --noconfirm "src\nokiainator.py"
 # How to compile
 
 ## Step one.
