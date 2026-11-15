@@ -1,5 +1,5 @@
 #define MyAppName "Nokiainator"
-#define MyAppVersion "1.0"
+#define MyAppVersion "1.0.1"
 #define MyAppPublisher "Nokiainator"
 
 [Setup]
@@ -13,7 +13,7 @@ DisableProgramGroupPage=yes
 ArchitecturesInstallIn64BitMode=x64
 PrivilegesRequired=admin
 OutputDir=output
-OutputBaseFilename=Nokiainator-Setup-1.0
+OutputBaseFilename=Nokiainator-Setup-1.0.1
 SetupIconFile=..\assets\NOKIAINATOR.ico
 UninstallDisplayIcon={app}\Nokiainator.exe
 ChangesAssociations=yes
