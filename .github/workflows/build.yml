@@ -1,0 +1,52 @@
+
+name: Build Nokiainatorotron9000
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  build:
+    runs-on: windows-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Get python working
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.14"
+
+      - name: Install PyInstaller
+        run: |
+          python -m pip install pyinstaller==6.22.3
+
+      - name: Build Nokiainator
+        run: |
+          python -m PyInstaller --onefile --console --name Nokiainator --icon="assets\nokiainator.ico" --clean --noconfirm "src\nokiainator.py"
+
+      - name: Copy dumbass FFMPEG
+        run: |
+          Copy-Item "src\ffmpeg.exe" "dist\ffmpeg.exe"
+
+      - name: Install inno setup
+        run: |
+          choco install innosetup --yes --no-progress
+
+      - name: Build installer
+        run: |
+          & "C:\Program Files (x86)\Inno Setup 6\ISCC.exe" "installer\setup.iss"
+
+      - name: Upload build artifacts
+        uses: actions/upload-artifact@v4
+        with:
+          name: Nokiainator-Windows
+          path: |
+            dist/Nokiainator.exe
+            dist/ffmpeg.exe
+            installer/output/Nokiainator-Setup-1.0.exe
