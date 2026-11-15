@@ -47,4 +47,4 @@ jobs:
           name: Nokiainator-Windows
           path: |
             dist/Nokiainator/
-            installer/output/Nokiainator-Setup-1.0.1.exe
+            installer/output/Nokiainator-Setup-1.0.2.exe
