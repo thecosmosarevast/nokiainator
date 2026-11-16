@@ -1,3 +1,5 @@
+# How to use
+>Right click your video file and select "Send to your grandpas nokia from 2004"
 # How to compile
 
 ## Step one.
